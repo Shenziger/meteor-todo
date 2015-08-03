@@ -1,0 +1,16 @@
+<template name="todoList">
+
+    <div id="todo-list">
+        <div class="form-group">
+            <input id="todo-input" type="text">
+        </div>
+
+        <ul class="list-unstyled">
+{{#each todos}}
+    {{>todoElement}}
+{{/each}}
+
+        </ul>
+    </div>
+
+</template>
